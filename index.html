@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +19,8 @@
           theme: {
             extend: {
               colors: {
+                infocolor: '#0D0D1260',
+                titlecolor: '#131318',
                 clifford: '#da373d',
               }
             }
@@ -33,17 +35,81 @@
     </style>
 </head>
 <body class="font-manrope">
-    <header class="">
+    <header class="container mx-auto">
         <nav>
 
         </nav>
         <div class="banner">
+          <!-- Carousel with next/prev buttons -->
+          <div class="carousel my-14 mx-32">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="./Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="./Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="./Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+          <!-- Badge -->
+          <div class="badge">
 
+          </div>
         </div>
     </header>
 
-    <main>
-
+    <main class="container mx-auto">
+      <!-- professional hockeys club -->
+      <div class="text-center mx-32">
+        <hr>
+        <h3 class="text-2xl lg:text-4xl font-extrabold text-titlecolor mt-8 pb-6">Professional Hockeys Club</h3>
+        <p class="text-base font-medium mb-8 lg:px-80 text-infocolor">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        <hr>
+        <!-- radial progress  -->
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 place-content-evenly mt-12">
+          <div>
+            <div class="radial-progress text-primary" style="--value:70;" role="progressbar">87%</div>
+            <h4 class="text-xl font-semibold text-titlecolor pt-6 pb-4">Prayer Facility</h4>
+            <p class="text-base font-normal text-infocolor">Amet consectetur. Condimentum dignissim adipiscing .</p>
+          </div>
+          <div>
+            <div class="radial-progress text-primary" style="--value:70;" role="progressbar">95%</div>
+            <h4 class="text-xl font-semibold text-titlecolor pt-6 pb-4">Experienced Coach</h4>
+            <p class="text-base font-normal text-infocolor">Amet consectetur. Condimentum dignissim adipiscing .</p>
+          </div>
+          <div>
+            <div class="radial-progress text-primary" style="--value:70;" role="progressbar">90%</div>
+            <h4 class="text-xl font-semibold text-titlecolor pt-6 pb-4">Senior Player</h4>
+            <p class="text-base font-normal text-infocolor">Amet consectetur. Condimentum dignissim adipiscing .</p>
+          </div>
+          <div>
+            <div class="radial-progress text-primary" style="--value:70;" role="progressbar">80%</div>
+            <h4 class="text-xl font-semibold text-titlecolor pt-6 pb-4">Training Ground</h4>
+            <p class="text-base font-normal text-infocolor">Amet consectetur. Condimentum dignissim adipiscing .</p>
+          </div>
+        </div>
+        <hr>
+      </div>
     </main>
 
     <footer>
