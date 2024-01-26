@@ -40,12 +40,51 @@
 </head>
 <body class="font-manrope">
     <header class="container mx-auto">
-        <nav>
-
+      <!-- nav start  -->
+        <nav class="mt-10 mx-32 flex">
+          <div class="navbar bg-base-100 lg:relative">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle lg:collapse">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- menu end  -->
+            <div class="navbar lg:absolute">
+              <a class="text-4xl text-titlecolor font-extrabold">Hockey<span class="text-primarycolor">'</span>s</a>
+            </div>
+            <!-- branding end  -->
+            <div class="collapse lg:visible lg:pl-36">
+              <ul class="flex space-x-10">
+                <li><a class="font-bold text-primarycolor" href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+            <!-- pages end  -->
+            <div class="navbar-end">
+              <button class="btn btn-ghost btn-circle invisible lg:visible">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+              </button>
+              <button class="btn btn-error text-white text-xl font-bold">
+                Get Ticket
+              </button>
+            </div>
+          </div>
         </nav>
         <div class="banner">
           <!-- Carousel with next/prev buttons -->
-          <div class="carousel my-14 mx-32">
+          <div class="carousel my-12 mx-32">
             <div id="slide1" class="carousel-item relative w-full">
               <img src="./Images/1.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -450,7 +489,7 @@
       <!-- hockey club  -->
         <div class="col-span-2 lg:col-span-3">
           <h3 class="text-3xl font-extrabold text-white">Get In Touch</h3>
-        <p class="text-base mt-4 mb-6">Hockey Club, play hockey be happy!!!<br>Providing professional hockey training since 1992. <br> your future is our responsibility.</p>
+        <p class="text-base mt-4 mb-6">Hockey's Club, play hockey be happy!!!<br>Providing professional hockey training since 1992. <br> your future is our responsibility.</p>
         <p><i class="fa-regular fa-envelope text-red-700 pt-1 pr-2"></i> hockeys@support.com</p>
         <p><i class="fa-solid fa-phone text-red-700 pt-1 pr-2"></i> (+62) 123-321-543</p>
         </div>
